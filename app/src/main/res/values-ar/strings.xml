@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="register">تسجيل الدخول</string>
+    <string name="connection_issue">حدثت مشكلة في الاتصال</string>
+    <string name="connected">تم الاتصال بنجاح</string>
+    <string name="horse_rider">فارس الخيل</string>
+</resources>
