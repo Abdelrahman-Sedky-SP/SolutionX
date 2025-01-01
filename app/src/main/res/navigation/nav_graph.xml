@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/singleSelectionFragment"
+        android:name="com.example.solutionx.presentation.fragment.singleSelection.SingleSelectionFragment"
+        android:label="fragment_single_selection"
+        tools:layout="@layout/fragment_single_selection" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.solutionx.presentation.fragment.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_singleSelectionFragment"
+            app:destination="@id/singleSelectionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_selectiveFragment"
+            app:destination="@id/selectiveFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_resourcesFragment"
+            app:destination="@id/resourcesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectiveFragment"
+        android:name="com.example.solutionx.presentation.fragment.selective.SelectiveFragment"
+        android:label="fragment_selective"
+        tools:layout="@layout/fragment_selective" />
+
+    <fragment
+        android:id="@+id/resourcesFragment"
+        android:name="com.example.solutionx.presentation.fragment.resources.ResourcesFragment"
+        android:label="fragment_resources"
+        tools:layout="@layout/fragment_resources" />
+
+</navigation>

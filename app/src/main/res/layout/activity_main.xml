@@ -1,100 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_filled_primary"
-        style="@style/Button"
-        android:layout_marginTop="16dp"
-        android:text="@string/register" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_outlined"
-        style="@style/Button.OutLine"
-        android:layout_marginTop="8dp"
-        android:text="@string/register" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_filled_secondary"
-        style="@style/Button.Secondary"
-        android:layout_marginTop="8dp"
-        android:text="@string/register" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_filled_text"
-        style="@style/TextButton"
-        android:layout_marginTop="8dp"
-        android:text="@string/register" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_filled_text_secondary"
-        style="@style/TextButton.Secondary"
-        android:layout_marginTop="8dp"
-        android:text="@string/register" />
-
-    <com.google.android.material.divider.MaterialDivider
-        style="@style/Divider"
-        android:layout_marginTop="8dp" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text_view_error"
-        style="@style/TextView"
-        android:layout_marginTop="8dp"
-        android:text="@string/register" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text_view_medium"
-        style="@style/TextView.Medium"
-        android:layout_marginTop="8dp"
-        android:text="@string/register" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text_view_bold"
-        style="@style/TextView.Bold"
-        android:layout_marginTop="8dp"
-        android:text="@string/register" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text_view_secondary"
-        style="@style/TextView.Secondary"
-        android:layout_marginTop="8dp"
-        android:text="@string/register" />
-
-    <LinearLayout
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/image_view_connection_error"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:contentDescription="@string/connection_issue"
-            android:src="@drawable/img_connection_error" />
-
-        <ImageView
-            android:id="@+id/image_view_connection"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:contentDescription="@string/connected"
-            android:src="@drawable/state_connection" />
-
-        <ImageView
-            android:id="@+id/image_view_horse_rider"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:contentDescription="@string/horse_rider"
-            android:src="@drawable/state_horse_rider" />
-    </LinearLayout>
-
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
 </LinearLayout>
