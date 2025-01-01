@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">SolutionX</string>
+    <string name="app_name" translatable="false">SolutionX</string>
+    <string name="register">Register</string>
+    <string name="connection_issue">Connection Issue Occurred</string>
+    <string name="connected">Connected Successfully</string>
+    <string name="horse_rider">Horse Rider</string>
 </resources>

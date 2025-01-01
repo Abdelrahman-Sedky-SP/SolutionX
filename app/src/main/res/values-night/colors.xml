@@ -4,6 +4,6 @@
     <color name="onPrimary">#FFFFFF</color>
     <color name="secondary">#FFA726</color>
     <color name="onSecondary">#212121</color>
-    <color name="background">#FFFFFF</color>
-    <color name="onBackground">#1F1F1F</color>
+    <color name="background">#1F1F1F</color>
+    <color name="onBackground">#FFFFFF</color>
 </resources>

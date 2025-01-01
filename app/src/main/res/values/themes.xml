@@ -1,9 +1,104 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
+
     <style name="Base.Theme.SolutionX" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+        <item name="android:colorBackground">@color/background</item>
     </style>
 
     <style name="Theme.SolutionX" parent="Base.Theme.SolutionX" />
+
+    <!--region Font -->
+    <style name="Font" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/app_font_regular</item>
+    </style>
+
+    <style name="Font.Medium" parent="Font">
+        <item name="android:fontFamily">@font/app_font_medium</item>
+    </style>
+
+    <style name="Font.Bold" parent="Font">
+        <item name="android:fontFamily">@font/app_font_bold</item>
+    </style>
+    <!--endregion -->
+
+    <!--region Button -->
+    <style name="Button" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">@style/Font.Bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Button.OutLine" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">@style/Font.Bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">?colorPrimary</item>
+    </style>
+
+    <style name="Button.Secondary" parent="Button">
+        <item name="android:backgroundTint">?colorSecondary</item>
+    </style>
+
+    <style name="TextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">@style/Font.Bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="TextButton.Secondary" parent="TextButton">
+        <item name="android:textColor">?colorSecondary</item>
+    </style>
+    <!--endregion -->
+
+    <!--region TextView -->
+    <style name="TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAppearance">@style/Font</item>
+    </style>
+
+    <style name="TextView.Medium" parent="TextView">
+        <item name="android:textAppearance">@style/Font.Medium</item>
+    </style>
+
+    <style name="TextView.Bold" parent="TextView">
+        <item name="android:textAppearance">@style/Font.Bold</item>
+    </style>
+
+    <style name="TextView.Secondary" parent="TextView">
+        <item name="android:textColor">?colorSecondary</item>
+    </style>
+    <!--endregion -->
+
+    <!--region Divider -->
+    <style name="Divider" parent="Widget.Material3.MaterialDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="dividerThickness">1dp</item>
+    </style>
+    <!--endregion -->
+
 </resources>
