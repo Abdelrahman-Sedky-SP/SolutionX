@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Egypt",
+        "nationality": "Egyptian",
+        "currency": "EGP",
+        "code": "EG",
+        "phone_code": "0020",
+        "flag": "flag1"
+    },
+    {
+        "id": 2,
+        "name": "United States",
+        "nationality": "American",
+        "currency": "USD",
+        "code": "US",
+        "phone_code": "001",
+        "flag": "flag2"
+    },
+    {
+        "id": 3,
+        "name": "France",
+        "nationality": "French",
+        "currency": "EUR",
+        "code": "FR",
+        "phone_code": "0033",
+        "flag": "flag3"
+    },
+    {
+        "id": 4,
+        "name": "Japan",
+        "nationality": "Japanese",
+        "currency": "JPY",
+        "code": "JP",
+        "phone_code": "0081",
+        "flag": "flag4"
+    },
+    {
+        "id": 5,
+        "name": "India",
+        "nationality": "Indian",
+        "currency": "INR",
+        "code": "IN",
+        "phone_code": "0091",
+        "flag": "flag5"
+    }
+]

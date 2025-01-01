@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Egyptian Pound",
+        "code": "EGP",
+        "symbol": "£",
+        "country": "Egypt"
+    },
+    {
+        "id": 2,
+        "name": "United States Dollar",
+        "code": "USD",
+        "symbol": "$",
+        "country": "United States"
+    },
+    {
+        "id": 3,
+        "name": "Euro",
+        "code": "EUR",
+        "symbol": "€",
+        "country": "European Union"
+    },
+    {
+        "id": 4,
+        "name": "Japanese Yen",
+        "code": "JPY",
+        "symbol": "¥",
+        "country": "Japan"
+    },
+    {
+        "id": 5,
+        "name": "Indian Rupee",
+        "code": "INR",
+        "symbol": "₹",
+        "country": "India"
+    }
+]
