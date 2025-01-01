@@ -4,4 +4,7 @@
     <string name="connection_issue">Connection Issue Occurred</string>
     <string name="connected">Connected Successfully</string>
     <string name="horse_rider">Horse Rider</string>
+    <string name="single_selection" translatable="false">Single Selection</string>
+    <string name="selective_selection" translatable="false">Selective Selection</string>
+    <string name="resources" translatable="false">Resources</string>
 </resources>
